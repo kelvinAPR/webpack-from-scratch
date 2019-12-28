@@ -1,0 +1,29 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "no-duplicate-imports": "error",
+    "no-alert": "warn",
+    "no-console": "warn",
+    "no-dupe-args": "error",
+    "no-unused-vars": "error",
+    "no-unused-expressions": "error",
+    "sort-imports": "warn",
+    "linebreak-style": "off"
+  }
+}
