@@ -1,0 +1,19 @@
+@import '../../assets/styles/variables.scss';
+
+.page-500 {
+  width: 100%;
+  background: $primary_white;
+  height: 100vh;
+
+  .illustration {
+    width: 100%;
+  }
+
+  .bottom-section {
+    margin-top: -5rem;
+    .message {
+      font-size: 20px;
+      margin-bottom: 3rem;
+    }
+  }
+}
