@@ -35,7 +35,6 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-dist/
 
 # TypeScript v1 declaration files
 typings/
@@ -71,4 +70,8 @@ dist/
 .DStore
 
 # editor specific folders
+<<<<<<< HEAD
 .vscode/
+=======
+.vscode/
+>>>>>>> task(gitignore): added git ignore files
