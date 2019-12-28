@@ -1,21 +1,14 @@
 module.exports = {
   entry: {
-    main: './src/index.js',
-    vendor: './src/vendor.js',
+    main: ['./src/index.jsx'],
+    vendor: ['@babel/polyfill', './src/vendor.js'],
   },
   module: {
     rules: [
       {
-        test: /\.jsx?/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loader: [
-          {
-            loader: 'babel-loader',
-            query: {
-              presets: ['@babel/preset-react'],
-            },
-          },
-        ],
+        loader: 'babel-loader',
       },
       {
         test: /\.html$/,
@@ -33,5 +26,8 @@ module.exports = {
         },
       },
     ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json', '.css', '.jpg', '.png'],
   },
 };
