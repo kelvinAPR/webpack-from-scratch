@@ -3,7 +3,7 @@
     "browser": true,
     "es6": true
   },
-  "extends": ["plugin:react/recommended", "airbnb"],
+  "extends": ["plugin:react/recommended", "airbnb", "prettier"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -23,7 +23,8 @@
     "no-dupe-args": "error",
     "no-unused-vars": "error",
     "no-unused-expressions": "error",
-    "sort-imports": "warn",
-    "linebreak-style": "off"
+    "linebreak-style": "off",
+    "indent": "warn",
+    "prefer-destructuring": "warn"
   }
 }

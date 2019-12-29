@@ -1,7 +1,20 @@
-import './main.scss';
+import React from 'react';
+import ReactDom from 'react-dom';
+import { Provider } from 'react-redux';
+
+import configureStore from './redux/store/configureStore';
 import App from './App';
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 
-const React = require('react');
-const ReactDom = require('react-dom');
+import './main.scss';
 
-ReactDom.render(<App />, document.getElementById('root'));
+const store = configureStore();
+
+ReactDom.render(
+  <Provider store={store}>
+    <ErrorBoundary>
+      <App />
+    </ErrorBoundary>
+  </Provider>,
+  document.getElementById('root')
+);
