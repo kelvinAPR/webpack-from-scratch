@@ -1,0 +1,120 @@
+@import '../../../assets/styles/variables';
+
+.__loginContainer{
+    top: 50%;
+    margin-top: -13.5rem;
+    width: 36%;
+    min-width: 28rem;
+    transition: all 0.7s ease;
+    height: 27rem;
+    position: fixed;
+    right: 6%;
+    border-radius: 0.3rem;
+    background: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    padding: 2rem 3rem;
+    padding-bottom: 25rem !important;
+
+    h1{
+        font-family: $primary_font;
+        font-weight:500;
+        color:#333333;
+        letter-spacing: -0.01em;
+        font-size:2.3rem;
+        margin-bottom:2.3rem;
+    }
+    input{
+        width:100%;
+        padding:0.9rem 1.2rem;
+        margin-bottom:1.7rem;
+        display:flex;
+        border: 0.09rem solid $primary_grey;
+        border-radius: 0.4rem;
+        font-size:0.9rem !important;
+        font-family: $primary_font;
+        color:#333333 !important;
+        box-sizing:border-box;
+    }
+    input:focus{
+        border:0.1rem solid $primary_color;
+    }
+    .__showOrHidePassword{
+        float:right;
+        margin-top:-3.6em;
+        margin-right:1em;
+        cursor:pointer;
+        transition:all 0.5s ease;
+        color:$login_color;
+    }
+    .__showOrHidePassword:hover{
+        transform:scale(1.4);
+    }
+    input::-webkit-input-placeholder{
+        color:#AAAAAA;
+    }
+    div.__ErrorCont{
+        color: #FFFFFF;
+        background: $login_error_red;
+        border-radius: 0.4rem;
+        padding: 0.51rem 1.3rem;
+        position: fixed;
+        margin-top: -6.85rem;
+        font-size: 0.9rem;
+        opacity: 0.8;
+        right: 10% !important;
+
+        .error_pointer{
+            width:0.6rem;
+            height:0.6rem;
+            background: $login_error_red;
+            position: absolute;
+            right:2rem;
+            bottom:-0.26rem;
+            transform:rotate(45deg);
+        }
+    }
+
+    button{
+        width:100%;
+        margin-top:3rem;
+        border-radius:3rem;
+        padding:1rem;
+        background: $primary_color;
+        color:#fff;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        display:block;
+        cursor:pointer;
+        border:0.08em solid $primary_color;
+
+    }
+    button:hover{
+        background: $darker_red
+    }
+
+    button.isLoading{
+        background:#fff !important;
+        position: relative;
+    }
+    button.isLoading:after{
+        position: absolute;
+        content: "";
+        background-color: #fff !important;
+        width: 100%;
+        background-image: url(../../../assets/images/Spinner-0.7s-200px.gif);
+        background-repeat: no-repeat;
+        left: 0;
+        top: 0;
+        // filter:grayscale(100%);
+        border-radius: inherit;
+        height: 100%;
+        background-position: center;
+        background-size: 2.4rem;
+    }
+}
+
+.__loginContainer:hover, .__noOpacity{
+    background: #fff;
+}
+
+

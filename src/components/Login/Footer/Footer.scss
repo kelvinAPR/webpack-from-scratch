@@ -1,0 +1,35 @@
+@import '../../../assets/styles/variables';
+
+.__loginFooter{
+    width:100%;
+    position:fixed;
+    bottom:0;
+    height:5rem;
+    background:$primary_black;
+    display: flex;
+    box-sizing: border-box;
+    padding-left:5%;
+    padding-top:1.8rem;
+
+    h2{
+        font-size:1rem;
+        color:$login_footer_text_color;
+    }
+    .__marqueHolder{
+        width:55%;
+        margin-left:2%;
+        height:2rem;
+        marquee{
+            span{
+                font-size:0.9rem;
+                color:$login_footer_text_color;
+                padding-right:2rem;
+            }
+        }
+    }
+    p{
+        margin-left: 6%;
+        font-size:0.9rem;
+        color:$login_footer_text_color;
+    }
+}

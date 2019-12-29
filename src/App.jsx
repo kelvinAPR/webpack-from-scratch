@@ -1,16 +1,13 @@
 import React from 'react';
-import Header from './components/Header';
-import webpackImg from './assets/webpack.png';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './routes';
+
+import './assets/styles/global.scss';
 
 export default function App() {
   return (
-    <div>
-      <header>
-        <Header />
-      </header>
-      <main>
-        <img src={webpackImg} alt="" />
-      </main>
-    </div>
+    <Router>
+      <Routes />
+    </Router>
   );
 }

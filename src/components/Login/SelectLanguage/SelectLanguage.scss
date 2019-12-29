@@ -1,0 +1,70 @@
+@import '../../../assets/styles/variables';
+
+.select_language_container{
+    width:12%;
+    min-width:12rem;
+    right: 9.4%;
+    height:3rem;
+    position:fixed;
+    overflow:hidden;
+    bottom: 50%;
+    margin-bottom:-5.9rem;
+    cursor:pointer;
+
+    .__select{
+        border-radius:0.3rem;
+        width:100%;
+        position: absolute;
+        bottom:0;
+        height:2.6rem;
+        border:1px solid #eee;
+        z-index:2;
+        background:$primary_white;
+        span{
+            font-size:1rem;
+            float:left;
+            color:$secondary_grey;
+            padding:0.56rem 0rem 0rem 0.9rem;
+        }
+        i{
+            font-weight:400;
+            font-size:1.1rem;
+            color:$darkest_red;
+            float: right;
+            padding:0.6rem 1.3rem;
+            transition: all 0.4s ease;
+            margin: unset;
+            width: unset;
+            height: unset;
+        }
+        i.__rotateCaret{
+            transform:rotate(180deg);
+        }
+    }
+    .__noBorder{
+        border-radius: 0 0 0.3rem 0.3rem !important;
+    }
+    .__selectItems{
+        border-radius:0.3rem 0.3rem 0 0;
+        border-bottom:0.08rem solid #eee;
+        height:14rem;
+        width:100%;
+        position: absolute;
+        bottom:2.46rem;
+        background:#fff;
+        padding-top:1em;
+        p{
+            color:#777;
+            margin:0;
+            padding:0.56rem 1rem;
+        }
+        p:hover{
+            background:#eee;
+        }
+    }
+    
+}
+
+.select_language_container.show_one{
+    height:20rem !important;
+}
