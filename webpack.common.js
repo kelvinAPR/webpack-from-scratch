@@ -1,7 +1,7 @@
 module.exports = {
   entry: {
-    main: ['./src/index.jsx'],
-    vendor: ['@babel/polyfill', './src/vendor.js'],
+    main: ['@babel/polyfill', './src/index.jsx'],
+    // vendor: ['./src/vendor.js'],
   },
   module: {
     rules: [
@@ -15,7 +15,7 @@ module.exports = {
         use: ['html-loader'],
       },
       {
-        test: /\.(svg|png|jpg|gif)$/,
+        test: /\.(jpe?g|gif|png|woff|woff2|eot|ttf|svg|csv)(\?.*$|$)/,
         use: {
           loader: 'file-loader',
           options: {

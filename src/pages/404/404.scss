@@ -1,0 +1,23 @@
+@import '../../assets/styles/variables';
+
+.page-404 {
+    width: 100%;
+    min-height: 50rem;
+    background: $primary_white;
+    overflow: hidden;
+    .ui.animated.button{
+        padding-right: 3rem !important;
+    }
+
+    .illustration{
+        width: 100%;
+        height: 100%;
+    }
+
+    .bottom-section {
+        margin-top: -6rem;
+        .message {
+            font-size: 20px;
+        }
+    }
+}
